@@ -1,0 +1,338 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: .2s linear;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+
+a,
+p {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+#container {
+    margin: auto;
+    max-width: 1000px;
+}
+
+.logo-div {
+    margin-top: 100px;
+    max-width: 350px;
+}
+
+.div-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.promo-code-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.promo-code-all-div {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.promo-code-div {
+    background-color: #fff;
+    height: 100px;
+    border-radius: 100px;
+    box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo-code-div:hover{
+    background: #ffd300 !important;
+}
+
+.flex-1 {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+
+.flex-2 span {
+    font-size: 3.6rem;
+    color: #000;
+}
+
+
+.promo-code-text p {
+    color: #000;
+}
+
+
+.submit-button {
+    margin-top: 50px;
+    background-color: #ffd300;
+    height: 100px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.submit-button:hover{
+    background-color: #fff;
+}
+
+.go-text p {
+    font-size: 2.4rem;
+    font-weight: bolder;
+    color: #000;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+}
+
+.go-icon {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.go-icon span {
+    color: #000;
+    font-weight: bolder;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+.m-b-20 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.collapsible {
+    background-color: #ffd300;
+    color: #000;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    font-weight: bolder;
+    outline: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.content-img-div{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.bonus-rules .collapsible {
+    background-color: #fff !important;
+}
+
+.bonus-rules .collapsible:hover {
+    background-color: #ffd300 !important;
+}
+
+
+.bonus-rules .content{
+    width: 95vw;
+}
+
+.content p {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.content p:first-child {
+    margin-top: 20px;
+}
+
+.arrowColl {
+    color: #000 !important;
+    margin-right: 10px;
+}
+
+.m-t-100 {
+    margin-top: 100px;
+}
+
+.promo-code-title{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bonus-rules .collapsible{
+    text-align: center;
+}
+
+.bonus-rules{
+    margin-bottom: 200px;
+}
+
+/* ! MEDIA QUERY */
+
+@media only screen and (min-width: 1000px) {
+
+    .promo-code-div{
+        width: 50vw;
+    }
+
+    .collapsible{
+        width: 50vw;
+    }
+
+    .bonus-rules{
+        width: 50vw;
+    }
+
+    .promo-code-title{
+        font-size: 24px;
+    }
+
+    .content{
+        max-width: 50vw;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 999px){
+
+    .content{
+        width: 80vw !important;
+    }
+
+    .collapsible{
+        width: 80vw;
+    }
+
+    .bonus-rules{
+        width: 80vw;;
+    }
+
+    .promo-code-div{
+        width: 90vw;
+    }
+
+    
+    .promo-code-title{
+        font-size: 20px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 599px) {
+
+    .content{
+        width: 95vw;
+    }
+
+    .promo-code-div{
+        width: 95vw;
+    }
+
+    .bonus-rules{
+        width: 95vw;
+    }
+
+    .collapsible{
+        width: 95vw;
+        font-size: 20px !important;
+    }
+
+    .content p{
+        font-size: 16px;
+    }
+
+    .promo-code-title{
+        font-size: 18px;
+    }
+
+    .m-t-100{
+        font-weight: bolder;
+    }
+
+    .bolder {
+        font-weight: bolder;
+    }
+
+    .logo-div{
+        width: 90vw;
+    }
+
+    .promo-code-div, .submit-button{
+        height: 75px;
+    }
+
+    .promo-code-text, .go-text p{
+        font-size: 24px;
+    }
+
+    .flex-2 {
+        margin-left: -20px;
+    }
+    
+    .flex-1 {
+        margin-left: -5px;
+    }
+
+    .logo-div {
+        margin-top: 50px;
+    }
+
+    .promo-code-title{
+        margin-top: 50px;
+    }
+
+    .div-img{
+        margin-bottom: 0px;
+    }
+
+    .submit-button{
+        margin-top: 30px;
+    }
+
+}
