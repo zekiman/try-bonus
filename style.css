@@ -69,9 +69,6 @@ img {
     justify-content: center;
 }
 
-.promo-code-div:hover{
-    background: #ffd300 !important;
-}
 
 .flex-1 {
     display: flex;
@@ -85,6 +82,10 @@ img {
 .flex-2 span {
     font-size: 3.6rem;
     color: #000;
+}
+
+.done{
+    display: none !important;
 }
 
 
@@ -104,9 +105,6 @@ img {
     cursor: pointer;
 }
 
-.submit-button:hover{
-    background-color: #fff;
-}
 
 .go-text p {
     font-size: 2.4rem;
@@ -171,10 +169,6 @@ img {
     background-color: #fff !important;
 }
 
-.bonus-rules .collapsible:hover {
-    background-color: #ffd300 !important;
-}
-
 
 .bonus-rules .content{
     width: 95vw;
@@ -188,6 +182,11 @@ img {
 
 .content p:first-child {
     margin-top: 20px;
+}
+
+.text-part{
+    font-size: 14px;
+    color: #fff;
 }
 
 .arrowColl {
@@ -212,6 +211,16 @@ img {
     margin-bottom: 200px;
 }
 
+.text-part{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.yellow{
+    color: #ffd300 !important;
+    font-size: 20px;
+}
+
 /* ! MEDIA QUERY */
 
 @media only screen and (min-width: 1000px) {
@@ -228,12 +237,21 @@ img {
         width: 50vw;
     }
 
+    /* .promo-code-div:hover{
+        background: #ffd300 !important;
+    } */
+
     .promo-code-title{
         font-size: 24px;
     }
 
     .content{
         max-width: 50vw;
+    }
+
+  
+    .bonus-rules .collapsible:hover {
+        background-color: #ffd300 !important;
     }
 }
 
@@ -256,11 +274,21 @@ img {
         width: 90vw;
     }
 
-    
+    /* .promo-code-div:hover{
+        background: #ffd300 !important;
+    } */
+
     .promo-code-title{
         font-size: 20px;
     }
     
+    .submit-button:hover{
+        background-color: #fff;
+    }
+
+    .bonus-rules .collapsible:hover {
+        background-color: #ffd300 !important;
+    }
 }
 
 
@@ -285,6 +313,11 @@ img {
 
     .content p{
         font-size: 16px;
+    }
+
+    .text-part{
+        font-size: 16px;
+        color: #fff;
     }
 
     .promo-code-title{
